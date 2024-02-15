@@ -88,9 +88,9 @@ Environment Setup
     Run Keyword If     '${environment}' == 'QA'      Set QA Environment
 
 Set SIT Environment
-    Set Global Variable    ${login_url1}              https://relx-elsevier-oa--sit.my.salesforce.com/
-    Set Global Variable    ${SF_UserName1}            ${SF_UserName} 
-    Set Global Variable    ${SF_Password1}            ${SF_Password}
+    Set Global Variable    ${login_url1}              ${SF_URL_SIT} 
+    Set Global Variable    ${SF_UserName1}            ${SF_UserName_SIT} 
+    Set Global Variable    ${SF_Password1}            ${SF_Password_SIT}
 
 Set QA Environment
     Set Global Variable    ${login_url1}              https://relx-elsevier-oa--qa.my.salesforce.com/
