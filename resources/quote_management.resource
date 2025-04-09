@@ -52,7 +52,9 @@ Create Quote
     # Determine split payment status
     Run Keyword    Is Split Pay    ${agreement_acronym}
     Log To Console    Is Split Pay: ${is_split_pay}
-    Log To Console      ${username}    ${password}    ${client_id}    
+    Log To Console      ${username}    
+    Log To Console      ${password}    
+    Log To Console      ${client_id}    
 
     # Get access token
     Log To Console      ${username}    ${password}    ${client_id}    ${client_secret}
