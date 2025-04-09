@@ -13,7 +13,7 @@ Library                 ../libraries/quote_type.py
 ${username}=         ${acc_username} 
 ${password}=         ${acc_password} 
 ${client_id}=        ${acc_client_id} 
-${client_secret}=    Test
+${client_secret}    ${acc_client_secret} 
 
 ${BillingAddressDetails}    ${EMPTY}  # Placeholder for billing address details.
 ${account_id}               ${EMPTY}  # Placeholder for account_id
