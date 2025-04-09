@@ -55,6 +55,7 @@ Create Quote
 
     # Get access token
     ${access_token}=    access_token_params.get_access_token    ${username}    ${password}    ${client_id}    ${client_secret}
+    Log To Console      ${username}    ${password}    ${client_id}    ${client_secret}
     Log To Console    Access Token: ${access_token}
 
     # Check if access token is retrieved
