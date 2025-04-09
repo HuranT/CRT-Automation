@@ -18,7 +18,7 @@ def get_access_token(username, password, client_id, client_secret):
         "password": password
     }
 
-    response = requests.post(urlStringold, data=payload)
+    response = requests.post(url, data=payload)
 
     if response.status_code == 200:
         json_response = response.json()
