@@ -12,10 +12,10 @@ def get_access_token(username, password, client_id, client_secret):
 
     payload = {
         "grant_type": "password",
-        "client_id": client_id,
-        "client_secret": client_secret,
         "username": username,
-        "password": password
+        "password": password,
+        "client_id": client_id,
+        "client_secret": client_secret    
     }
 
     response = requests.post(url, data=payload)
