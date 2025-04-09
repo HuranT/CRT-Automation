@@ -21,11 +21,13 @@ def get_access_token(username, password, client_id, client_secret):
         "password": password
     }
 
-    response = requests.post(url, data=payload)
+    response = requests.post(urlStringold, data=payload)
 
-    if response.status_code == 200:
-        access_token = response.json()['access_token']
+  if response.status_code == 200:
+        json_response = response.json()
+        print(json_response)
+        access_token = json_response['access_token']
         return access_token
     else:
-        print(f"Error: {response.status_code} - {response.text}")
+        print("Error: ", response.status_code, response.reason)
         return None
