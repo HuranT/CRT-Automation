@@ -2,11 +2,7 @@ import requests
 
 def get_access_token(username, password, client_id, client_secret):
     url = "https://test.salesforce.com/services/oauth2/token"
-  
-  username = str(username)
-    password = str(password)
-    client_id = str(client_id)
-    client_secret = str(client_secret)
+print(username)
 
     payload = {
         "grant_type": "password",
