@@ -60,7 +60,7 @@ Create Quote
     
 
     # Get access token
-    ${access_token}=   access_token_params.get_access_token  ${username}    ${password}    ${client_id}    ${client_secret}
+    ${access_token}=   access_token_params.get_access_token         ${username}    ${password}    ${client_id}    ${client_secret}
 
     Log To Console    Passing Is Split Pay to save_quote: ${is_split_pay}
     ${response}=    save_quote   ${quote_type}  ${account_id}  ${contact_id}  ${address_id}  ${agreement_acronym}  ${approving_ecr_id}  ${society_ecr_id}  ${membershipReference}  ${discount_matrix_id}  ${is_split_pay}
