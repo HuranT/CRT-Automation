@@ -5,12 +5,12 @@ import json
 from robot.api import logger
 
 
-def save_quote(quotetype_name, account_id, contact_id, address_id, agreement_acronym=None, approving_ecr_id=None, society_ecr_id=None, membership_reference=None, discount_matrix_id=None, is_split_pay=None, tax_registration_number=None, tax_validation_result=None, access_token):
+def save_quote(quotetype_name, account_id, contact_id, address_id, agreement_acronym=None, approving_ecr_id=None, society_ecr_id=None, membership_reference=None, discount_matrix_id=None, is_split_pay=None, tax_registration_number=None, tax_validation_result=None):
     print(f"quotetype_name in save_quote function: {quotetype_name}")
     logger.info(f"Received is_split_pay: {is_split_pay}", also_console=True)
 
     # Get the access token
-    access_token = access_token
+    access_token = access_token_params.get_access_token()
     if not access_token:
         print("Access token retrieval failed.")
         return None
