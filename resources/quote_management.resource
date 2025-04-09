@@ -69,7 +69,7 @@ Create Quote
     Log To Console    Calling Create Quote API
     
     # Your logic to create the quote with the access token
-    ${response}=    save_quote   ${quote_type}  ${account_id}  ${contact_id}  ${address_id}  ${agreement_acronym}  ${approving_ecr_id}  ${society_ecr_id}  ${membershipReference}  ${discount_matrix_id}  ${is_split_pay}
+    ${response}=    save_quote   ${quote_type}  ${account_id}  ${contact_id}  ${address_id}  ${agreement_acronym}  ${approving_ecr_id}  ${society_ecr_id}  ${membershipReference}  ${discount_matrix_id}  ${is_split_pay}    ${access_token}
 
     # Log the entire response for debugging
     Log To Console    Entire Response: ${response}
