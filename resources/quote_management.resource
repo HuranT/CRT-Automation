@@ -10,10 +10,10 @@ Library                 ../libraries/quote_type.py
 
 *** Variables ***
 
-${username}=         ${username} #access token credentails 
-${password}=         ${password} #access token credentails 
-${client_id}=        ${client_id} #access token credentails 
-${client_secret}=    ${client_secret} #access token credentails 
+${username}=         ${acc_username} #access token credentails 
+${password}=         ${acc_password} #access token credentails 
+${client_id}=        ${acc_client_id} #access token credentails 
+${client_secret}=    ${acc_client_secret} #access token credentails 
 
 ${BillingAddressDetails}    ${EMPTY}  # Placeholder for billing address details.
 ${account_id}               ${EMPTY}  # Placeholder for account_id
