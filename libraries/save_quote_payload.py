@@ -10,7 +10,7 @@ def save_quote(quotetype_name, account_id, contact_id, address_id, agreement_acr
     logger.info(f"Received is_split_pay: {is_split_pay}", also_console=True)
 
     # Get the access token
-    access_token = access_token_params.get_access_token()
+    access_token = access_token_params.get_access_token1()
     if not access_token:
         print("Access token retrieval failed.")
         return None
