@@ -23,12 +23,14 @@ def get_body():
                 "discountMatrixId": None,
                 "discountType": None,
                 "membershipReference": None,
+                "societyEcrId": None,
                 "note": None,
                 "paymentModel": "POST_PAY",
                 "paymentTerm":"30",
                 "payments": [],
                 "poNumber": "PO1234",
                 "pricebookId": "01s3L0000001ZAlQAM",
+                "specialIssueIdentifier": None,
                 "quoteLines": [{
                         "article": {
                             "articleAcceptedDate": 1672531200000,
@@ -71,7 +73,6 @@ def get_body():
                 "sellingEntityId": "a0W3L000000AAzAUAW",
                 "shippingAccountAddressId": None,
                 "shippingAccountId": None,
-                "societyEcrId": None,
                 "societyMember": None,
                 "stackedDiscountMatrixId": None,
                 "stackedDiscountType": None,
