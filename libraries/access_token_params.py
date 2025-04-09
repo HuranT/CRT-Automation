@@ -1,16 +1,13 @@
 import requests
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
 def get_access_token(username, password, client_id, client_secret):
 
-    # Log the arguments passed into the function
+       # Log the arguments passed into the function
     logging.debug(f"Username: {username}")
     logging.debug(f"Password: {password}")
     logging.debug(f"Client ID: {client_id}")
     logging.debug(f"Client Secret: {client_secret}")
-
     url = "https://test.salesforce.com/services/oauth2/token"
 
     payload = {
@@ -21,13 +18,11 @@ def get_access_token(username, password, client_id, client_secret):
         "password": password
     }
 
-    response = requests.post(urlStringold, data=payload)
+    response = requests.post(url, data=payload)
 
-  if response.status_code == 200:
-        json_response = response.json()
-        print(json_response)
-        access_token = json_response['access_token']
+    if response.status_code == 200:
+        access_token = response.json()['access_token']
         return access_token
     else:
-        print("Error: ", response.status_code, response.reason)
+        print(f"Error: {response.status_code} - {response.text}")
         return None
