@@ -1,6 +1,16 @@
 import requests
+import logging
+
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def get_access_token(username, password, client_id, client_secret):
+
+    # Log the arguments passed into the function
+    logging.debug(f"Username: {username}")
+    logging.debug(f"Password: {password}")
+    logging.debug(f"Client ID: {client_id}")
+    logging.debug(f"Client Secret: {client_secret}")
+
     url = "https://test.salesforce.com/services/oauth2/token"
 
     payload = {
