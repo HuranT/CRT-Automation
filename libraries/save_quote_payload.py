@@ -1,3 +1,4 @@
+# Updated save_quote function to get credentials from Robot Framework suite variables
 import requests
 import access_token_params
 import quote_type
@@ -9,8 +10,14 @@ def save_quote(quotetype_name, account_id, contact_id, address_id, agreement_acr
     print(f"quotetype_name in save_quote function: {quotetype_name}")
     logger.info(f"Received is_split_pay: {is_split_pay}", also_console=True)
 
-    # Get the access token
-    access_token = access_token_params.get_access_token1()
+    # Get suite variables (credentials)
+    username = ${USERNAME}
+    password = ${PASSWORD}
+    client_id = ${CLIENT_ID}
+    client_secret = ${CLIENT_SECRET}
+
+    # Get the access token using suite variables
+    access_token = access_token_params.get_access_token1(username, password, client_id, client_secret)
     if not access_token:
         print("Access token retrieval failed.")
         return None
