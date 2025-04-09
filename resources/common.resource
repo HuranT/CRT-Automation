@@ -15,6 +15,11 @@ ${SF_UserName1}=           ${SF_UserName_SIT}
 ${SF_Password1}            ${SF_Password_SIT}
 
 
+${username}=         ${acc_username} #access token credentails 
+${password}=         ${acc_password} #access token credentails 
+${client_id}=        ${acc_client_id} #access token credentails 
+${client_secret}=    ${acc_client_secret} #access token credentails 
+
 *** Keywords ***
 Cookie check
     ${is_modal}=    IsText    Before you continue
