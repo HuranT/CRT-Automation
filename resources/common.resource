@@ -14,6 +14,11 @@ ${login_url1}=             ${SF_URL_SIT}
 ${SF_UserName1}=           ${SF_UserName_SIT} 
 ${SF_Password1}            ${SF_Password_SIT}
 
+${username}         ${username}
+${password}         ${password}
+${client_id}        ${client_id}
+${client_secret}    ${client_secret}
+
 *** Keywords ***
 Cookie check
     ${is_modal}=    IsText    Before you continue
