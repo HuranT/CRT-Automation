@@ -15,11 +15,6 @@ ${SF_UserName1}=           ${SF_UserName_SIT}
 ${SF_Password1}            ${SF_Password_SIT}
 
 
-${username}=         ${acc_username} 
-${password}=         ${acc_password}  
-${client_id}=        ${acc_client_id} 
-${client_secret}=    ${acc_client_secret} 
-
 *** Keywords ***
 Cookie check
     ${is_modal}=    IsText    Before you continue
