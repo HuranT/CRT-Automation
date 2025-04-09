@@ -1,4 +1,4 @@
-def get_access_token(username, password, client_id, client_secret):
+def get_access_token1(username, password, client_id, client_secret):
     import requests
 
     url = "https://test.salesforce.com/services/oauth2/token"
