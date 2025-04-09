@@ -15,10 +15,10 @@ ${SF_UserName1}=           ${SF_UserName_SIT}
 ${SF_Password1}            ${SF_Password_SIT}
 
 
-${username}=         ${acc_username} #access token credentails 
-${password}=         ${acc_password} #access token credentails 
-${client_id}=        ${acc_client_id} #access token credentails 
-${client_secret}=    ${acc_client_secret} #access token credentails 
+${username}=         ${acc_username} 
+${password}=         ${acc_password}  
+${client_id}=        ${acc_client_id} 
+${client_secret}=    ${acc_client_secret} 
 
 *** Keywords ***
 Cookie check
