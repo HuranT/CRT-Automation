@@ -10,10 +10,10 @@ Library                 ../libraries/quote_type.py
 
 *** Variables ***
 
-${username}=         ${acc_username} #access token credentails 
-${password}=         ${acc_password} #access token credentails 
-${client_id}=        ${acc_client_id} #access token credentails 
-${client_secret}=    ${acc_client_secret} #access token credentails 
+${username}=         ${acc_username} 
+${password}=         ${acc_password} 
+${client_id}=        ${acc_client_id} 
+${client_secret}=    ${acc_client_secret} 
 
 ${BillingAddressDetails}    ${EMPTY}  # Placeholder for billing address details.
 ${account_id}               ${EMPTY}  # Placeholder for account_id
@@ -53,7 +53,7 @@ Create Quote
     Run Keyword    Is Split Pay    ${agreement_acronym}
     Log To Console    Is Split Pay: ${is_split_pay}
     Log To Console      ${username}    ${password}    ${client_id}    ${client_secret}
-    
+
     # Get access token
     Log To Console      ${username}    ${password}    ${client_id}    ${client_secret}
     ${access_token}=    access_token_params.get_access_token    ${username}    ${password}    ${client_id}    ${client_secret}
