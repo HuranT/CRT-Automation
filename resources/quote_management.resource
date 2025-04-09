@@ -10,10 +10,10 @@ Library                 ../libraries/quote_type.py
 
 *** Variables ***
 
-${username}=         ${acc_username} #access token credentails 
-${password}=         ${acc_password} #access token credentails 
-${client_id}=        ${acc_client_id} #access token credentails 
-${client_secret}=    ${acc_client_secret} #access token credentails 
+${username}=         crt@elsevier.com.sit
+${password}=         CopadoSit1VldVuYAAdJiPiUD6NqwfiUGz 
+${client_id}=        3MVG9buXpECUESHhY8a2aZIZ46try6_OsE7Z14UxG54sEAis4OnGUsdIEJqFpjR7wT8dyAVWzBJFd2n.Z9Nzx 
+${client_secret}=    41A87B5E19212FA3FD8DBD3147868A3B6553F174A63CA0E7DA19E8D88A758B45 
 
 ${BillingAddressDetails}    ${EMPTY}  # Placeholder for billing address details.
 ${account_id}               ${EMPTY}  # Placeholder for account_id
